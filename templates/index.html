@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Barra de Menú</title>
+    <!-- Importar CSS desde static/ -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a href="{{ url_for('inicio') }}" class="logo">MiLogo</a>
+        <ul>
+            <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+            <li><a href="{{ url_for('prototipo') }}">Prototipo Aplicación</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('interesado') }}">Estoy Interesado</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Bienvenido a la Página de Inicio</h1>
+        <p>Explora las secciones desde el menú superior.</p>
+    </div>
+
+</body>
+</html>
