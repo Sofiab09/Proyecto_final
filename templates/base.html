@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}La Voz de las Manos{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="La voz de las manos">
+        
+        <ul>
+            <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+            <li><a href="{{ url_for('prototipo') }}">Prototipo Aplicación</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('interesado') }}">Estoy Interesado</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    
+    <footer>
+        <p>La voz de las manos © 2025</p>
+    </footer>
+
+</body>
+</html>

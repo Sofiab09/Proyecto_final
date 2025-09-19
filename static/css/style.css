@@ -1,6 +1,7 @@
 /* Estilos generales */
 body {
     margin: 0;
+    margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom right, #1e3a8a, #9333ea); /* azul a morado */
     color: white;
@@ -14,14 +15,14 @@ body {
     background: linear-gradient(to right, #3b82f6, #8b5cf6); /* azul-morado */
     padding: 12px 25px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    
 }
+
 
 /* Logo */
 .navbar .logo {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
+    height: 50px;
+    width: auto;
 }
 
 /* Menú */
@@ -32,7 +33,7 @@ body {
     padding: 0;
 }
 
-.navbar ul li {
+.navbar ul li { /*espaciado entre los de la navbar*/
     margin-left: 25px;
 }
 
@@ -63,4 +64,140 @@ body {
 .content p {
     font-size: 1.2rem;
     line-height: 1.6;
+}
+
+.impacto img{
+    width: 150px;
+    height: auto;
+}
+.impacto {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+.impacto table th {
+    padding: 0 25px; /* Crea un espacio de 25px a la izquierda y derecha de cada celda */
+}
+
+.boton {
+    /* Estilos del botón */
+    display: inline-block; /* Esto permite que el botón tenga un ancho y alto */
+    padding: 15px 30px; /* Aumenta el tamaño del botón con padding */
+    background-color: beige;
+    color: #1e3a8a;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #1e3a8a; /* Añade un borde para darle más presencia */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.boton:hover {
+    /* Efecto al pasar el cursor */
+    background-color: #1e3a8a; /* Cambia el color de fondo */
+    color: beige; /* Cambia el color del texto */
+    cursor: pointer; /* Cambia el cursor para indicar que es un enlace */
+}
+
+/* Centrar el botón (usando Flexbox en un contenedor) */
+.contenedor-del-boton { /* Asume que tienes un div que contiene el botón */
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+}
+footer{
+    align-items: center;
+    flex: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.prototype-list {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+.prototype-list li {
+  background: rgba(255,255,255,0.07);
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.prototype-list h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: #ffd966;
+}
+
+.prototype-list p {
+  margin: 0;
+  color: #f1f1f1;
+  line-height: 1.5;
+}
+
+.prototype-list img{
+    width: 500px;
+    height: auto;
+}
+
+.a-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.interesado {
+  max-width: 600px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+
+.interest-form {
+  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.08);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
 }

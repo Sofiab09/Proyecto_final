@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section prototype">
+  <h2 class="section-title"> Funcionamiento del Prototipo</h2>
+  <ul class="prototype-list">
+    <li>
+      <h3>Paso inicial: La letra a practicar</h3>
+      <p>El sistema elige una <strong>letra del abecedario</strong> y la muestra en pantalla. 
+      Junto a la letra aparece una <strong>palabra de referencia</strong con ilustración (ejemplo: A → Amigos). 
+      Así los niños asocian la letra con una seña y vocabulario cotidiano.</p>
+    </li>
+
+    <li>
+      <h3>Cámara en acción</h3>
+      <p>La aplicación muestra la instrucción para que el niño <strong>realice la seña de la letra indicada</strong>. 
+      Aquí se simularía la cámara y el reconocimiento.</p>
+    </li>
+
+    <li>
+      <h3>Reconocimiento con MediaPipe</h3>
+      <p>La tecnología <strong>MediaPipe</strong> analiza <strong>21 puntos clave en la mano</strong>. 
+      Con esos puntos identifica si la seña corresponde a la letra solicitada.</p>
+    </li>
+
+    <li>
+      <h3>Corrección instantánea</h3>
+      <p>Si la seña es <strong>correcta</strong>, aparece un mensaje positivo como: 
+      <em>“¡Muy bien! CORRECTO 🎉”</em>.  
+      Si es <strong>incorrecta</strong>, motiva a intentarlo otra vez: 
+      <em>“¡Casi lo logras! Intenta de nuevo 💪”</em>.</p>
+    </li>
+
+    <li>
+      <h3>Aprendizaje progresivo</h3>
+      <p>Al realizar correctamente la letra, el sistema <strong>pasa automáticamente a la siguiente</strong>. 
+      Así los niños recorren todo el abecedario en Lengua de Señas.</p>
+    </li>
+
+    <li>
+      <h3>Experiencia interactiva y entretenida</h3>
+      <p>El aprendizaje se convierte en un <strong>juego educativo</strong>. 
+      Cada acierto genera motivación y los intentos fallidos se transforman en oportunidades para practicar.</p>
+    </li>
+
+    <li class="a-container">
+        <img src="/static/img/A.jpg" alt="ejemplo">
+    </li>
+
+    <li>
+        <h3>Avance actual prototipo</h3>
+        <p>Así es el funcionamiento del reconocimiento de las letras a partir de la visión por ordenador:</p>
+    </li>
+  </ul>
+
+</section>
+{% endblock %}

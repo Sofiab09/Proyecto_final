@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página con Barra de Menú</title>
     <!-- Importar CSS desde static/ -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type= "image/png" href="{{ url_for('static', filename='img/logo.png') }}">
 </head>
 <body>
 
     <!-- Barra de navegación -->
     <nav class="navbar">
-        <a href="{{ url_for('inicio') }}" class="logo">MiLogo</a>
+        <img class="logo"src="/static/img/logo.png" alt="La voz de las manos">
+        
         <ul>
             <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
             <li><a href="{{ url_for('prototipo') }}">Prototipo Aplicación</a></li>
             <li><a href="{{ url_for('about') }}">About Us</a></li>
             <li><a href="{{ url_for('interesado') }}">Estoy Interesado</a></li>
         </ul>
+   
     </nav>
 
     <!-- Contenido principal -->
     <div class="content">
-        <h1>Bienvenido a la Página de Inicio</h1>
-        <p>Explora las secciones desde el menú superior.</p>
+        <img src="/static/img/logo.png" alt="Logo la voz de las manos">
+        <h1>La voz de las manos</h1>
+        <h2>Proyecto de Aprendizaje de Lengua de Señas para Niños</h2>
+        <p>Este proyecto busca enseñar el abecedario en Lengua de Señas a través de visión por ordenador a niños de forma visual, práctica y divertida. Combinamos imágenes, letras y palabras para crear un aprendizaje accesible e inclusivo.</p>
     </div>
+    <section class="impacto">
+        <table>
+            <tr>
+                <th><img src="https://images.vexels.com/media/users/3/158194/isolated/preview/11507ef5615c554fe88fc22c86768501-icono-de-tierra-simple.png" alt="mundo logo"></th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/42/42978.png" alt="niños"></th>
+                <th><img src="https://cdn-icons-png.freepik.com/512/7073/7073903.png" alt="idea"></th>
+            </tr>
+            <tr>
+                <th>Inclusión desde la infancia</th>
+                <th>Aprendizaje divertido e interactivo</th>
+                <th>Innovación educativa con tecnología</th>
+            </tr>
+        </table>
+    </section> <br>
+    
+    <div class="contenedor-del-boton">
+        <a href="{{ url_for('prototipo') }}" class="boton">Explora el prototipo</a>
+    </div>
+    
+
+    
 
 </body>
 </html>

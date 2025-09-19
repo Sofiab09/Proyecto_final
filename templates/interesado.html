@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section interesado">
+  <h2 class="section-title">🚀 ¡Sé parte del lanzamiento oficial!</h2>
+  <p class="intro">
+    Si quieres ser parte del lanzamiento oficial de la aplicación, ingresa tus datos y recibirás novedades.
+  </p>
+
+  <form method="POST" action="{{ url_for('interesado') }}" class="interest-form">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" required>
+    </div>
+
+    <div class="form-group">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" name="correo" id="correo" required>
+    </div>
+
+    <button type="submit" class="btn primary">Registrarme</button>
+  </form>
+</section>
+{% endblock %}
