@@ -42,7 +42,7 @@ Por ahora, la página web servirá como **exposición de la idea del proyecto**:
 ✔️ Explicar la iniciativa.  
 ✔️ Mostrar ejemplos del abecedario en señas.  
 ✔️ Incluir un formulario para suscripciones.  
-❌ Reconocimiento automático de gestos (en desarrollo).  
+✔️ Reconocimiento automático de gestos (en desarrollo).  
 
 ---
 
