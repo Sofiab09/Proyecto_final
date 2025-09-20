@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section about">
+  <h2 class="section-title">About Us</h2>
+
+  <div class="about-grid">
+    <div class="card profile-card">
+      <img src="{{ url_for('static', filename='img/sofia.jpeg') }}" alt="Foto Sofía" class="profile-img">
+      <h3 class="profile-name">Laura Sofía Barrios Sosa</h3>
+      <p class="profile-desc">
+        Tengo 18 años, soy estudiante de Ingeniería Multimedia en la universidad de San Buenaventura en Bogotá, soy apasionada por la fusión entre la tecnología y el diseño. 
+        Mis hobbies son leer, tomar fotos, grabar y editar videos y aprender diversas cosas.
+        Me encanta desarrollar proyectos que combinen innovación, creatividad e inclusión.
+        Este curso me ha permitido explorar diversos proyectos y aplicaciones basadas en la programación, mostrandome
+        una nueva perspectiva sobre el manejo de las tecnologías, y como estas nos brindan herramientas útiles.
+      </p>
+    </div>
+
+    <!-- Perfil 2 -->
+    <div class="card profile-card">
+      <img src="{{ url_for('static', filename='img/marjorie.jpeg') }}" alt="Foto Marjorie" class="profile-img">
+      <h3 class="profile-name">Marjorie Emilia Pérez Hernández</h3>
+      <p class="profile-desc">
+        Tengo 17 años y actualmente empecé la carrera de Diseño Industrial.  Mis hobbies tienen mucho que ver con lo artístico, me gusta pintar, dibujar y hacer manualidades. durante este año he aprendido a programar y me ha gustado mucho,  ya qué me ha permitido incursionar en algo diferente y nuevo para mi, al
+principio no estaba muy convencida con la idea de hacerlo, por que es algo totalmente diferente a los hobbies que acostumbro hacer,sin embargo cuando me adentré me descubrí que realmente me gusta este mundo, y realizando investigaciones para este proyecto me di cuenta de que en un futuro me gustaría realizar más cursos de Machine Learning y Deep Learning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Inspiración -->
+  <div class="card inspiration-card">
+    <h3>💡 Nuestra Inspiración</h3>
+    <p>
+      Este proyecto nace de la motivación por crear un recurso educativo inclusivo que 
+      ayude a los niños a aprender Lengua de Señas de forma divertida y accesible.  
+      Creemos que la inclusión comienza desde la infancia, y queremos aportar nuestro granito de arena 
+      utilizando la tecnología como puente para la comunicación y la igualdad de oportunidades.
+    </p>
+  </div>
+</section>
+{% endblock %}
